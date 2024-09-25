@@ -3,9 +3,9 @@ import streamlit as st
 import pickle
 import os
 
-model_path = 'SVM_heartDisease_model.pkl'
+model = 'SVM_heartDisease_model.pkl'
 
-with open(model_path,'rb') as f:
+with open(model,'rb') as f:
     loaded_model = pickle.load(f)
 
 rf_model = loaded_model
